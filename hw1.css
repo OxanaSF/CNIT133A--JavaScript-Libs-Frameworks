@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-weight: lighter;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h5 {
+  font-weight: lighter;
+}
+
+.whole-page-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 130px;
+}
+
+.left-half {
+  padding-left: 30px;
+  padding-top: 35%;
+  background: #005073;
+  color: #d2fdbb;
+}
+
+.right-half-grid {
+  padding-top: 35%;
+  padding-bottom: 35%;
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: 130px 130px 130px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 18px;
+}
+
+@media (max-width: 768px) {
+  .whole-page-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .left-half {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  .right-half-grid {
+    padding-top: 5%;
+    padding-bottom: 35%;
+    padding-left: 21%;
+    display: grid;
+    grid-gap: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .whole-page-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .left-half {
+    padding-top: 30px;
+  }
+
+  .right-half-grid {
+    padding-top: 5%;
+    padding-left: 40px;
+  }
+}
+
+.img-jquery {
+  background: url(jquery.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  border: #ccc 0.5px solid;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px;
+}
+
+.img-d3 {
+  background: url(d3.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  border: #ccc 0.5px solid;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px;
+}
+
+.img-node {
+  background: url(node.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  border: #ccc 0.5px solid;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px;
+}
+
+.img-angular {
+  background: url(angular.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  border: #ccc 0.5px solid;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px;
+}
+
+.img-react {
+  background: url(react.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  border: #ccc 0.5px solid;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px;
+}
+
+.img-vue {
+  background: url(vue.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  border: #ccc 0.5px solid;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px;
+}

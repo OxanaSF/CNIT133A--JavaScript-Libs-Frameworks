@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Working with JQuery homework for CNIT 133A-JavaScript Libs/Frameworks-831"
+    />
+    <title>Working with JQuery homework</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="myjquery.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="hw2.css">
+
+
+
+    
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <form class="form-inline">
+        <button
+          id="navbar-btn0"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'hw1.html'; "
+        >
+          Home page
+        </button>
+
+        <button
+          id="navbar-btn1"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'hw3.html'; "
+        >
+          D3 HW
+        </button>
+
+        <button
+          id="navbar-btn2"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'hw4.html'; "
+        >
+          Node HW
+        </button>
+
+        <button
+          id="navbar-btn3"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'hw5.html'; "
+        >
+          Angular HW
+        </button>
+
+         <button
+          id="navbar-btn4"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'hw6.html'; "
+        >
+          React HW
+        </button>
+
+           <button
+          id="navbar-btn5"
+          class="btn btn-outline-success"
+          type="button"
+          onclick="window.location.href = 'hw7.html'; "
+        >
+          VueJS HW
+        </button>
+
+      </form>
+    </nav>
+
+    <br>
+    <h3 class="main-head">CNIT 133A Homework 2 - jQuery</h3>
+
+    <div class="task-descript">
+    <button type="button" class="collapsible">Click Here to read the Task for the Homework</button>
+    <div class="collaps-inside">
+      <p>
+        You need to code the given HTML page (svae it as hw2.html) and use jQuey code to dynamically generate, below  the h1 tag, an unordered list with items that represent each certificate (each h2 heading) and these items will be a link(reference link) that will scropp down the page up to certificate that each h2 represents. When using jQuery, you should not create the list of certificate items manually, and should b ereading each h2 to get the title of the certificate so then if the user later on decides to include or delete a certificate, that list would be created automatically with jQuery program without the need of updating the jQuery program for it.
+      </p>
+    </div>
+    </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+
+    <div class="content">
+     <hr>
+      <h1>Computer Networking and Information Technology</h1>
+
+      <h2>Beginning Web Development Certificate</h2>
+      <h3>CNIT 131H</h3>
+      <p>
+        Introduction to HTML &amp; CSS - a light introduction course to HTML and
+        inline CSS that is completed in 6 weks. This course cannot be used to
+        substitude CNIT 131 for AS Degree, only certificates. HTNL, CSS and FTP
+        will be learned.
+      </p>
+      <h3>CNIT 131</h3>
+      <p>
+        Internet and Beginning HTML - this is a semester-long course and you
+        will learn about browsers, wired and wireless network, network security,
+        etc. This course is part of the core courses required for AS Degree in
+        CNIT.
+      </p>
+      <h3>CNIT 132:</h3>
+      <p>
+        Intermediate HTML &amp; CSS - this course contains intermediate
+        techniques of HTML and CSS including principles of Responsive Web
+        Design, CSS animation, etc.
+      </p>
+
+      <hr/>
+      <h2>Advanced Web Development Certificate</h2>
+      <h3>CNIT 133</h3>
+      <p>
+        JavaScript, jQuery, AJAX - this course starts with the basics of
+        JavaScript up to more advanced techniques and will introduce jQiery and
+        AJAX.
+      </p>
+      <h3>CNIT 134</h3>
+      <p>
+        Server-Side Technologies: ASP.NET - The use of ASP.NET techniques to
+        create dynamic, server-side web pages. Using MS Visual Studio.
+      </p>
+
+      <hr/>
+      <h2>Optional for Web Development Certificate</h2>
+      <h3>CNIT 129</h3>
+      <p>Web 2.0 Technologies - the study and use of different web 2.0 technologies and their integration within web pages. Students will develop blogs, social media pages, social bookmarking, maps, etc.</p>
+      <h3>CNIT 131A</h3>
+      <p>XML &; JSON - Introduction to XML, the use of XML to transfer data across different platforms; XSLT, CSS to style XML data. Introduction to JSON.</p>
+
+      <hr/>
+      <h2>Other Certificates</h2>
+      <h3>Cybersecurity</h3>
+      <p>For students interested in the network security area.</p>
+      <h3>Advanced Cybersecurity</h3>
+      <p>This certificate includes more advanced topics in the area of network security. Students will be ready to take some well-known industry exams in the area of network security.</p>
+      <h3>Computer Technical Support</h3>
+      <p>This certificate prepares students for the job positions of technical support and even with some basis of help desk or technical service managment.</p>
+      <h3>Wireless Networking</h3>
+      <p>Students will be able to plan, install, and maintain wireless networks applying some basic principles of network security.</p>
+
+    </div>
+  </body>
+</html>
