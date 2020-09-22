@@ -3,42 +3,110 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .navbar {
   background: #005073;
 }
 
+/* Task part styling */
+
+button.collapsible {
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  box-shadow: none;
+  padding: 30px;
+  margin-bottom: 5px;
+  background: #f1f1f1;
+}
+.collaps-inside {
+  text-align: center;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+button.collapsible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.collapsible:hover {
+  background-color: rgb(241, 219, 219);
+  background-color: #d2fdbb;
+}
+input.input {
+  background-color: white;
+  padding-bottom: 30px;
+  border: none;
+  text-decoration: underline;
+  color: deepskyblue;
+}
+input.input:active,
+input.input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.task-descript {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 8%;
+}
+@media (max-width: 768px) {
+  .task-descript {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.main-head {
+  color: #005073;
+  font-weight: lighter;
+  font-size: 38px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+/* Buttons styling */
+img {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .btn.btn-outline-success {
   margin: 5px;
   letter-spacing: 2px;
 }
-
 .btn-outline-success:hover {
   background-color: #552c1f;
 }
-
 .btn.btn-outline-success:active,
 .btn.btn-outline-success:focus {
   outline-color: #552c1f;
   outline: none !important;
   box-shadow: none !important;
 }
-
 div.alert.alert-info {
   text-align: center;
   font-size: 28px;
 }
-
 p {
   padding: 10px;
 }
-
 .btn-outline-success {
   color: #404969;
   border-color: #404969;
   font-weight: lighter;
 }
-
 #navbar-btn0:hover,
 #navbar-btn1:hover,
 #navbar-btn2:hover,
@@ -63,13 +131,35 @@ p {
   color: #005073;
   letter-spacing: 2px;
 }
-
 .btn.btn-outline-success {
   margin: 5px;
 }
-
 .btn-outline-success {
   color: #d2fdbb;
   border-color: #d2fdbb;
   font-weight: lighter;
+}
+
+/* Main part styling */
+
+#chart {
+  margin: auto;
+  margin-top: 100px;
+  width: 50%;
+  background: #f4f4f8;
+  width: 520px;
+  height: 300px;
+}
+#chart rect {
+  fill: #57799c;
+}
+#chart text {
+  fill: #272525;
+  font: 11px sans-serif;
+}
+path.domain {
+  stroke: #dddde7;
+}
+g.tick {
+  color: #dddde7;
 }

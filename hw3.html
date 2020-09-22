@@ -1,84 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Homework D3 for CNIT 133A-JavaScript Libs/Frameworks-831"
-    />
-    <title>Homework D3</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Homework D3 for CNIT 133A-JavaScript Libs/Frameworks-831" />
+  <title>Homework D3</title>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="hw3.css" />
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-  <body>
-    <nav class="navbar">
-      <form class="form-inline">
-        <button
-          id="navbar-btn0"
-          class="btn btn-outline-success"
-          type="button"
-          onclick="window.location.href = 'hw1.html'; "
-        >
-          Home page
-        </button>
+  <link rel="stylesheet" type="text/css" href="hw3.css" />
+</head>
 
-        <button
-          id="navbar-btn1"
-          class="btn btn-outline-success"
-          type="button"
-          onclick="window.location.href = 'hw2.html'; "
-        >
-          jQuery HW
-        </button>
+<body>
+  <nav class="navbar">
+    <form class="form-inline">
+      <button id="navbar-btn0" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'hw1.html'; ">
+        Home page
+      </button>
 
-        <button
-          id="navbar-btn2"
-          class="btn btn-outline-success"
-          type="button"
-          onclick="window.location.href = 'hw4.html'; "
-        >
-          Node HW
-        </button>
+      <button id="navbar-btn1" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'hw2.html'; ">
+        jQuery HW
+      </button>
 
-        <button
-          id="navbar-btn3"
-          class="btn btn-outline-success"
-          type="button"
-          onclick="window.location.href = 'hw5.html'; "
-        >
-          Angular HW
-        </button>
+      <button id="navbar-btn2" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'hw4.html'; ">
+        Node HW
+      </button>
 
-        <button
-          id="navbar-btn4"
-          class="btn btn-outline-success"
-          type="button"
-          onclick="window.location.href = 'hw6.html'; "
-        >
-          React HW
-        </button>
+      <button id="navbar-btn3" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'hw5.html'; ">
+        Angular HW
+      </button>
 
-        <button
-          id="navbar-btn5"
-          class="btn btn-outline-success"
-          type="button"
-          onclick="window.location.href = 'hw7.html'; "
-        >
-          VueJS HW
-        </button>
-      </form>
-    </nav>
-    <br />
-    <h1>Homework D3 Coming Soon!</h1>
-  </body>
+      <button id="navbar-btn4" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'hw6.html'; ">
+        React HW
+      </button>
+
+      <button id="navbar-btn5" class="btn btn-outline-success" type="button"
+        onclick="window.location.href = 'hw7.html'; ">
+        VueJS HW
+      </button>
+    </form>
+  </nav>
+  <br />
+  <h3 class="main-head">CNIT 133A Homework 3 - D3.js</h3>
+
+  <div class="task-descript">
+    <button type="button" class="collapsible">
+      Click Here to read the Task for the Homework
+    </button>
+    <div class="collaps-inside">
+      <p>
+        Build the bars like on the image that is shown below,<br>
+        using data from an exetrnal JSON file:
+
+        <img src="hw3.png" alt="barchart" />
+      </p>
+    </div>
+  </div>
+  
+  <hr />
+
+  <div id="chart"></div>
+
+
+  <script src="d3.min15.js"></script>
+  <script src="hw3.js"></script>
+</body>
+
 </html>
